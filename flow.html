@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css" />
+        <title>SCMBC Cheet Sheet/Flow</title>
+    </head>
+    <body>
+<H1>1.初めてのGIT</H1>
+<H2>1.マスターリポジトリにカレントを変更する。</H2>
+
+<H2>2.マスターリポジトリからローカルリポジトリにダウンロードする。</H2>
+コマンドは以下の通り。<br>
+<pre>
+ git pull
+</pre>
+<H2>3.ローカルファイルを編集する。</H2>
+
+<H2>4.編集したファイルとローカルリポジトリのファイルの差分を確認する。</H2>
+<pre>
+ git diff
+</pre>
+<H2>5.編集したファイルをローカルリポジトリに反映する。</H2>
+<pre>
+ git add <ファイル名>
+</pre>
+<H2>6.ローカルリポジトリに反映する。</H2>
+<pre>
+ git commit
+</pre>
+<H2>7.マスターリポジトリにローカルリポジトリの内容を反映する。</H2>
+<pre>
+git push
+</pre>
+<H3>7.1.pushに失敗した場合</H3>
+<pre>git fetch
+git rebase origin/<マスターリポジトリ>
+</pre>
+
+<H3>7.2.rebaseに失敗したとき</H3>
+<pre>
+git rebase --continue
+</pre>
+<H1>2.ブランチ</H1>
+<H2>2.1ローカルリポジトリに新しいブランチを作成する</H2>
+<pre>
+git checkout -b <ブランチ名>
+</pre>
+<H2>2.2.ブランチをマスタリポジトリにアップロードする</H2>
+<pre>
+git push origin <ブランチ名>
+</pre>
+
+    </body>
+</html>
