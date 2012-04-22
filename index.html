@@ -25,6 +25,9 @@
             <a class="brand" href="term.html">単語</a>
             <div class="nav-collapse">
               <ul class="nav">
+                <li class="active"><a href="#">チートシート</a></li>
+                <li><a href="reverse-lookup.html">逆引きコマンド集1</a></li>
+                <li><a href="flow.html">逆引きコマンド集2</a></li>
               </ul>
             </div><!--/.nav-collapse -->
           </div>
@@ -36,18 +39,25 @@
           <h1><img src="logo.png" alt="gitチートシート" style="margin:0px 0px 24px 0px" /></h1>
           <p><a class="btn btn-primary btn-large" href="http://kokucheese.com/event/index/32328/">Event page &raquo;</a></p>
         </div>
-        <h2>コマンド</h2>
+        <h2 id="command">コマンド</h2>
         <dl>
         <dt>init</dt>
         <dd>リポジトリを初期化する</dd>
+        <dd>--bare: リモートリポジトリ(bare repogitory)を作成する</dd>
         <dt>clone</dt>
         <dd>リポジトリをクローンする</dd>
+        <dd>--bare : bare repogitoryを作成</dd>
         <dt>add</dt>
         <dd>現在のディレクトリ(または、変更対象ファイル)の内容を保存し、コミット対象に加える</dd>
+        <dd>--dry-run : エア実行</dd>
         <dt>rm</dt>
         <dd>指定したファイルを削除する</dd>
+        <dd>--dry-run : エア実行</dd>
         <dt>commit</dt>
         <dd>インデックスの内容をコミットとして保存する</dd>
+        <dd>-a : 作業ディレクトリの変更内容をadd</dd>
+        <dd>-m &lt;msg&gt; : コミットメッセージ</dd>
+        <dd>--dry-run : エア実行</dd>
         <dt>merge</dt>
         <dd>分岐された内容を分岐元にマージしてコミットする</dd>
         <dt>fetch</dt>
