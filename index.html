@@ -3,11 +3,37 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css" />
+        <style type="text/css">
+          body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+          }
+        </style>
         <title>SCMBC Cheet Sheet</title>
     </head>
     <body>
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#">Top</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </div>
+      
       <div class="container">
-        <h1><img src="logo.png" alt="gitチートシート" /></h1>
+        <div class="hero-unit">
+          <h1><img src="logo.png" alt="gitチートシート" style="margin:0px 0px 24px 0px" /></h1>
+          <p><a class="btn btn-primary btn-large" href="http://kokucheese.com/event/index/32328/">Event page &raquo;</a></p>
+        </div>
         <h2>コマンド</h2>
         <dl>
         <dt>init</dt>
@@ -28,6 +54,14 @@
         <dd>ほかのリポジトリの変更点をローカルリポジトリにマージする</dd>
         <dt>push</dt>
         <dd>公開リポジトリに自分のリポジトリの内容を送信する</dd>
+        <dt>log</dt>
+        <dd>コミット履歴を表示する</dd>
+        <dt>diff</dt>
+        <dd>ある時点からの変更内容をパッチ形式の差分で表示する</dd>
+        <dt>status</dt>
+        <dd>変更されたファイルを表示する</dd>
+        <dt>blame</dt>
+        <dd>指定したファイルの各行がどのコミットで変更されたかを表示する</dd>
         </dl>
     <h2>単語</h2>
         <dl>
@@ -61,7 +95,8 @@
         <dd>実際にチェックアウトされたファイルのツリー</dd>
         <dt>ワークスペース（workspace）</dt>
         <dd>ソースコードなどを編集するための領域</dd>
-    </dl>
+       </dl>
+    <a href="reverse-lookup.html"><h2>逆引きコマンド集</h2></a>
     <h2>クレジット</h2>
     <ul>
         <li>youku-s</li>
