@@ -21,6 +21,8 @@
               <span class="icon-bar"></span>
             </a>
             <a class="brand" href="#">Top</a>
+            <a class="brand" href="reverse-lookup.html">逆引き</a>
+            <a class="brand" href="term.html">単語</a>
             <div class="nav-collapse">
               <ul class="nav">
                 <li class="active"><a href="#">チートシート</a></li>
@@ -41,15 +43,21 @@
         <dl>
         <dt>init</dt>
         <dd>リポジトリを初期化する</dd>
-        <dd>--bare: リモートリポジトリを作成する</dd>
+        <dd>--bare: リモートリポジトリ(bare repogitory)を作成する</dd>
         <dt>clone</dt>
         <dd>リポジトリをクローンする</dd>
+        <dd>--bare : bare repogitoryを作成</dd>
         <dt>add</dt>
         <dd>現在のディレクトリ(または、変更対象ファイル)の内容を保存し、コミット対象に加える</dd>
+        <dd>--dry-run : エア実行</dd>
         <dt>rm</dt>
         <dd>指定したファイルを削除する</dd>
+        <dd>--dry-run : エア実行</dd>
         <dt>commit</dt>
         <dd>インデックスの内容をコミットとして保存する</dd>
+        <dd>-a : 作業ディレクトリの変更内容をadd</dd>
+        <dd>-m &lt;msg&gt; : コミットメッセージ</dd>
+        <dd>--dry-run : エア実行</dd>
         <dt>merge</dt>
         <dd>分岐された内容を分岐元にマージしてコミットする</dd>
         <dd>&#60;ブランチ名&#62;: 指定したブランチの歴史を現在のブランチに併合する</dd>
@@ -69,41 +77,7 @@
         <dt>blame</dt>
         <dd>指定したファイルの各行がどのコミットで変更されたかを表示する</dd>
         </dl>
-    <h2 id="word">単語</h2>
-        <dl>
-        <dt>ブロブオブジェクト（blob object）</dt>
-	<dd>タイプ付けされていないオブジェクト, つまりファイルの中身</dd>
-        <dt>ブランチ（branch）</dt>
-        <dd>軽度の開発やバグフィックスなどの作業はbranchを使用して開発する。</dd>
-        <dt>コミットオブジェクト（commit object）</dt>
-	<dd>特定リビジョンの情報を含んだオブジェクトのこと</dd>
-        <dt>ヘッド（head）</dt>
-        <dd>ブランチの先端にあるコミットへの名前のついた参照 のこと</dd>
-	<dt>HEAD</dt>
-        <dd>現在のブランチ<dd>
-        <dt>リポジトリ（repository）</dt>
-        <dd>参照(refs)と参照から到達可能な全オブジェクトを 含んだオブジェクトＤＢの集合</dd>
-        <dt>リビジョン（revision）</dt>
-        <dd>オブジェクトＤＢ 内に格納されたファイルとディレクトリ の特定の状態</dd>
-        <dt>タグ（tag）</dt>
-	<dd>タグ(tag) や コミットオブジェクト を 指し示す 参照(ref) のこと</dd>
-        <dt>タグオブジェクト（tag object）</dt>
-	<dd>他のオブジェクトを指し示す 参照(ref) を含んでいる オブジェクト のこと</dd>
-        <dt>トピックブランチ（topic branch）</dt>
-	<dd>各開発ラインを識別する為に開発者が使用する通常の git ブランチ</dd>
-        <dt>ツリー（tree）</dt>
-	<dd>依存している blob と ツリーオブジェクトも含めた 作業ツリー または ツリーオブジェクト全体</dd>
-        <dt>追跡リポジトリ（tracking branch）</dt>
-	<dd>他の リポジトリ からの変更を追跡する為に使用される 通常の git ブランチ</dd>
-        <dt>ツリーオブジェクト（tree object）</dt>
-	<dd>blob または ツリーオブジェクトへの参照と、ファイル名とモードの一覧を含んだ オブジェクト</dd>
-        <dt>作業ツリー（working tree）</dt>
-        <dd>実際にチェックアウトされたファイルのツリー</dd>
-        <dt>ワークスペース（workspace）</dt>
-        <dd>ソースコードなどを編集するための領域</dd>
-       </dl>
-    <a href="reverse-lookup.html" id="reverse-lookup"><h2>逆引きコマンド集</h2></a>
-    <h2 id="credit">クレジット</h2>
+    <h2>クレジット</h2>
     <ul>
         <li>youku-s</li>
         <li>smallgeek</li>
